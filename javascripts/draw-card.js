@@ -2,10 +2,10 @@ define(function(require){
   var $ = require('jquery'),
       Q = require('q');
   
-  return function() {
+  return function(id) {
     var deferred = Q.defer();
     $.ajax({
-            url: "http://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=2",
+            url: "http://deckofcardsapi.com/api/deck/" + id + "/draw/?count=1",
             method: "GET"
           }).done(function(data){
             deferred.resolve(data);

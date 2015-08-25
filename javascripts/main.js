@@ -17,7 +17,7 @@ requirejs.config({
 });
 
 requirejs(
-  ["dependencies", "core-list"],
-  function(dependencies, corelist) {
+  ["dependencies", "events", "get-data", "draw-card" ],
+  function(dependencies, events, getdata, drawcard) {
 
   });

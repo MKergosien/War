@@ -3,8 +3,6 @@
   <head>
     <link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic' rel='stylesheet' type='text/css'>
-     
     <meta charset="utf-8">
     <title>WAR!</title>
   </head>
@@ -27,7 +25,8 @@
         <div class="collapse navbar-collapse navbar-btn" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <form class="navbar-form navbar-left" role="search">
-              <button type="button" class="btn btn-default" id="playBtn">Play</button>
+              <button type="button" class="btn btn-default" id="newgame">New Game</button>
+              <button type="button" class="btn btn-default" id="draw">Draw</button>
             </form>
           </ul>
         </div>
@@ -37,12 +36,12 @@
 
       
     <div class="row row-eq-height">
-      <div class="col-md-6 left">
-         <button type="button" class ="fullwidth myButton" id="drawLeft">Draw</button>
+      <div class="col-md-6 left" id="player1">
+          Player 1 Cards will display here
       </div>
 
-      <div class="col-md-6 right">
-        <button class ="fullwidth myButton" id="drawRight">Draw</button>
+      <div class="col-md-6 right" id="player2">
+          Player 2 Cards will display here
       </div>
     </div>
 
